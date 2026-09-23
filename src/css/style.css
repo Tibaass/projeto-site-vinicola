@@ -50,7 +50,7 @@ h1 {
   padding: 10px 0;
 }
 
-.item-vinho img {
+img {
   height: 100px;
   width: auto;
 }
@@ -66,10 +66,9 @@ h1 {
   color: #333333;
 }
 
-.formulario h1 {
+h1 {
 font-size: 28px;
 font-weight: normal;
-
 }
 
 .formulario > p {
@@ -93,4 +92,30 @@ margin-bottom: 15px;
 section p {
 font-size: 14px;
 margin-bottom: 10px;
+}
+
+.compra{
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.caixa{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0px 30px;
+}
+
+#escolha{
+  padding: 0 0 10px 0 ;
+}
+
+.compra h2{
+  margin-top: 15px;
+}
+
+.compra form{
+  background-color: rgba(187, 179, 179, 0.856);
+  padding: 10px ;
 }

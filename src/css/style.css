@@ -7,7 +7,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* a */
 body {
   background-color: #ffffff;
   color: #000000;
@@ -17,7 +16,7 @@ body {
 }
 
 header {
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 .navbar {
@@ -43,20 +42,6 @@ h1 {
   margin-bottom: 15px;
 }
 
-.card-novidade {
-  flex: 1;
-  min-width: 250px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cont-novidades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
 
 .item-vinho {
   display: flex;
@@ -65,7 +50,7 @@ h1 {
   padding: 10px 0;
 }
 
-.item-vinho img {
+img {
   height: 100px;
   width: auto;
 }
@@ -81,31 +66,56 @@ h1 {
   color: #333333;
 }
 
-.formulario h1 {
-  font-size: 28px;
-  font-weight: normal;
-
+h1 {
+font-size: 28px;
+font-weight: normal;
 }
 
-.formulario>p {
-  font-size: 15px;
-  color: #333333;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #cccccc;
+.formulario > p {
+font-size: 15px;
+color: #333333;
+margin-bottom: 25px;
+border-bottom: 1px solid #cccccc;
 }
 
 form {
-  max-width: 500px;
-  margin-bottom: 40px;
+max-width: 500px;
+margin-bottom: 40px;
 }
 
 section h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 15px;
 }
 
 section p {
-  font-size: 14px;
-  margin-bottom: 10px;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.compra{
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.caixa{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0px 30px;
+}
+
+#escolha{
+  padding: 0 0 10px 0 ;
+}
+
+.compra h2{
+  margin-top: 15px;
+}
+
+.compra form{
+  background-color: rgba(187, 179, 179, 0.856);
+  padding: 10px ;
 }

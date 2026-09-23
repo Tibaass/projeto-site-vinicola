@@ -166,6 +166,11 @@ margin-bottom: 15px;
   padding: 10px ;
 }
 
+iframe{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .historia h1{
   font-size: 28px;
   font-weight: normal;

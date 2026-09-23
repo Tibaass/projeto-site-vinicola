@@ -7,6 +7,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo{
+  display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 0;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -42,6 +49,18 @@ h1 {
   margin-bottom: 15px;
 }
 
+
+#instrucoes {
+  margin-bottom: 30px;
+}
+
+.contato form {
+  max-width: 500px;
+  margin-bottom: 40px;
+  background-color: rgba(187, 179, 179, 0.856);
+  padding: 10px;
+  font-weight: bold;
+}
 
 .item-vinho {
   display: flex;
@@ -90,7 +109,7 @@ margin-bottom: 15px;
 }
 
 section p {
-font-size: 14px;
+font-size: 15px;
 margin-bottom: 10px;
 }
 
@@ -111,6 +130,17 @@ margin-bottom: 15px;
   padding: 0 0 10px 0 ;
 }
 
+.formulario h2{
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.formulario label{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
 .compra h2{
   margin-top: 15px;
 }
@@ -118,4 +148,18 @@ margin-bottom: 15px;
 .compra form{
   background-color: rgba(187, 179, 179, 0.856);
   padding: 10px ;
+}
+
+.historia h1{
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 10px;
+}
+
+.historia p{
+  font-size: 15px;
+    color: #333333;
+    margin-bottom: 25px;
 }

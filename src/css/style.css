@@ -25,6 +25,21 @@ body {
 
 header {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0;
+}
+
+header img {
+  height: 70px;
+  width: auto;
+  border: 2px solid #ccc;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar {

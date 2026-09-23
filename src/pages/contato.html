@@ -5,22 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
 </head>
+    <link rel="stylesheet" href="src/css/style.css">
 <body>
     <header>
         <nav>
-
+             <ul class="nav-links">
+                <li><a href="">Início</a></li>
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Contatos</h1>
-        <p>Entre em contato conosco!</p>
+        <p>Entre em contato conosco através do formulário abaixo:</p>
+        <form action="enviar_contato.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Informações de Contato</h2>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: agnellovinicula@gmail.com</p>
+        <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+        
     </main>
 
     <footer>
         <ul>
             <li><a href="../../index.html">Home</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </footer>
 </body>

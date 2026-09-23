@@ -1,15 +1,14 @@
-<!-- lista catálogos -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo Vinho</title>
-</head>
     <link rel="stylesheet" href="../css/style.css">
+</head>
 <body>
-    <header>
+    <!-- Header com classe navbar para aplicar o fundo escuro -->
+    <header class="navbar">
         <nav>
              <ul class="nav-links">
                 <li><a href="../../index.html">Início</a></li>
@@ -21,36 +20,44 @@
         </nav>
     </header>
 
-    <main>
+    <!-- Conteúdo em bloco centralizado -->
+    <main class="container">
         <h1>Vinhos em Catálogo</h1>
         <hr>
-        <br>
 
-        <h4>Vinho Papa Figos</h4>
-        <img src="../assets/imgs/vinho_1.png" alt="Vinho 1" width="132" height="200">
-        <br>
-        <p>Região: Portugal - Uvas: Touriga Nacional, Tinta Roriz, Touriga Nacional</p>
-
-        <hr>
-        <br>
-
-        <h4>Expedicion</h4>
-        <img src="../assets/imgs/vinho_2.png" alt="Vinho 2" width="132" height="200">
-        <br>
-        <p>Região: Chile - Uvas: Cabernet Sauvignon</p>
+        <!-- Item 1 -->
+        <div class="item-vinho">
+            <img src="../assets/imgs/vinho_1.png" alt="Vinho Papa Figos">
+            <div class="info-vinho">
+                <h4>Vinho Papa Figos</h4>
+                <p><strong>Região:</strong> Portugal - <strong>Uvas:</strong> Touriga Nacional, Tinta Roriz, Touriga Nacional</p>
+            </div>
+        </div>
 
         <hr>
-        <br>
 
-        <h4>Portada</h4>
-        <img src="../assets/imgs/vinho_3.png" alt="Vinho 3" width="132" height="200">
-        <br>
-        <p>Região: Portugal - Uvas: Pinot Noir, Cabernet Sauvignon, Caladoc</p>
+        <!-- Item 2 -->
+        <div class="item-vinho">
+            <img src="../assets/imgs/vinho_2.png" alt="Expedicion">
+            <div class="info-vinho">
+                <h4>Expedicion</h4>
+                <p><strong>Região:</strong> Chile - <strong>Uvas:</strong> Cabernet Sauvignon</p>
+            </div>
+        </div>
 
+        <hr>
+
+        <!-- Item 3 -->
+        <div class="item-vinho">
+            <img src="../assets/imgs/vinho_3.png" alt="Portada">
+            <div class="info-vinho">
+                <h4>Portada</h4>
+                <p><strong>Região:</strong> Portugal - <strong>Uvas:</strong> Pinot Noir, Cabernet Sauvignon, Caladoc</p>
+            </div>
+        </div>
+
+        <hr>
     </main>    
 
-    <footer>
-
-    </footer>
 </body>
 </html>

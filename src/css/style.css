@@ -16,7 +16,7 @@ body {
 }
 
 header {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .navbar {
@@ -42,6 +42,20 @@ h1 {
   margin-bottom: 15px;
 }
 
+.card-novidade {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cont-novidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
 
 .item-vinho {
   display: flex;
@@ -67,30 +81,30 @@ h1 {
 }
 
 .formulario h1 {
-font-size: 28px;
-font-weight: normal;
+  font-size: 28px;
+  font-weight: normal;
 
 }
 
-.formulario > p {
-font-size: 15px;
-color: #333333;
-margin-bottom: 25px;
-border-bottom: 1px solid #cccccc;
+.formulario>p {
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
 }
 
 form {
-max-width: 500px;
-margin-bottom: 40px;
+  max-width: 500px;
+  margin-bottom: 40px;
 }
 
 section h2 {
-font-size: 20px;
-font-weight: bold;
-margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 section p {
-font-size: 14px;
-margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
 }

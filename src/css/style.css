@@ -25,3 +25,9 @@
 .nav-links a:hover {
   color: #38dbf8;
 }
+
+body {
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  font-size: 1.2em;
+}

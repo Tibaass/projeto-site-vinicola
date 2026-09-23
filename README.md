@@ -6,3 +6,6 @@ Com a pandemia, o movimento da loja física caiu bastante e muitos clientes pass
 
 Desenvolvido por:
 Gustavo Suzuki, Pedro Henrique Costa, Tiago Ferreira
+
+link GitHub Pages:
+https://tibaass.github.io/projeto-site-vinicola/

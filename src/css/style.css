@@ -97,6 +97,22 @@ h1 {
   align-items: center;
   gap: 25px;
   padding: 10px 0;
+  line-height: 1.8em;
+}
+
+span button {
+  background-color: #afafaf;
+  color: #000000;
+  border: 1px solid #0000009d;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+button a{
+  color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 img {

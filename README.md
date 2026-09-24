@@ -9,3 +9,6 @@ Gustavo Suzuki, Pedro Henrique Costa, Tiago Ferreira
 
 link GitHub Pages:
 https://tibaass.github.io/projeto-site-vinicola/
+
+Estrutura dos arquivos:
+<img width="351" height="547" alt="image" src="https://github.com/user-attachments/assets/bea1977c-7532-4a61-92bd-d0fb3f7261b7" />

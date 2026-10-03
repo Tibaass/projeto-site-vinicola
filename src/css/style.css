@@ -1,219 +1,322 @@
 @charset "UTF-8";
 
+:root {
+  --vinho-escuro: #3e0f18;   
+  --vinho: #5c1626;          
+  --vinho-claro: #8b2942;    
+  --dourado: #c9a227;        
+  --dourado-escuro: #a6841e;
+  --creme: #f8f1e7;          
+  --creme-escuro: #ece2d0;   
+  --texto-escuro: #2b1810;   
+  --texto-claro: #f8f1e7;    
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', serif;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  padding: 10px 0;
-}
-
-/* j */
 
 body {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 30px;
-  max-width: 1200px;
+  background-color: var(--vinho-escuro);
+  color: var(--texto-claro);
+  padding: 0 0 40px 0;
+}
+
+main {
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 30px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--vinho-claro);
+  margin: 25px 0;
 }
 
 header {
-  margin-bottom: 30px;
+  background-color: var(--vinho);
   display: flex;
   align-items: center;
-  gap: 25px;
-  padding: 10px 0;
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  margin-bottom: 30px;
 }
 
 header img {
-  height: 70px;
+  height: 130px;
   width: auto;
-  border: 2px solid #ccc;
+  border: 3px solid var(--dourado);
+  padding: 2px;
+  background-color: var(--creme);
+}
+
+header h6 {
+  font-family: art-nuvo, Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+  color: var(--creme);
+  margin-left: 15px;
 }
 
 header nav {
   display: flex;
   align-items: center;
-  gap: 20px;
-}
-
-.navbar {
-  margin-bottom: 25px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 28px;
 }
 
 .nav-links a {
-  color: #000000;
+  color: var(--texto-claro);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  letter-spacing: 0.3px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--dourado);
+  border-bottom: 2px solid var(--dourado);
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: normal;
+  color: var(--creme);
   margin-bottom: 15px;
 }
 
-.card-novidade {
-  flex: 1;
-  min-width: 250px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cont-novidades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-#instrucoes {
-  margin-bottom: 30px;
-}
-
-.contato form {
-  max-width: 500px;
-  margin-bottom: 40px;
-  background-color: rgba(187, 179, 179, 0.856);
-  padding: 10px;
+h2 {
+  font-size: 20px;
   font-weight: bold;
+  color: var(--dourado);
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 17px;
+  color: var(--creme);
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.item-vinho,
+.formulario,
+.contato form,
+.compra form,
+section {
+  background-color: var(--creme);
+  color: var(--texto-escuro);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: var(--vinho);
+}
+
+section p {
+  color: var(--texto-escuro);
+  margin-bottom: 10px;
+}
+
+main > div {
+  background-color: var(--creme);
+  color: var(--texto-escuro);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+main > div h3 {
+  color: var(--vinho);
+}
+
+main > div p {
+  color: var(--texto-escuro);
 }
 
 .item-vinho {
   display: flex;
   align-items: center;
   gap: 25px;
-  padding: 10px 0;
-  line-height: 1.8em;
 }
 
-span button {
-  background-color: #afafaf;
-  color: #000000;
-  border: 1px solid #0000009d;
-  padding: 5px 8px;
-  border-radius: 5px;
-}
-
-button a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-img {
-  height: 100px;
+.item-vinho img {
+  height: 200px;
   width: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
 }
 
-.info-vinho h2 {
+.info-vinho h4 {
   font-size: 18px;
-  font-weight: normal;
+  color: var(--vinho);
   margin-bottom: 6px;
 }
 
 .info-vinho p {
   font-size: 14px;
-  color: #333333;
+  color: var(--texto-escuro);
+  margin-bottom: 10px;
 }
 
-.formulario h1 {
-  font-size: 28px;
-  font-weight: normal;
-
+span button,
+input[type="submit"] {
+  background-color: var(--dourado);
+  color: var(--texto-escuro);
+  border: none;
+  padding: 9px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.formulario>p {
-  font-size: 15px;
-  color: #333333;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #cccccc;
+span button:hover,
+input[type="submit"]:hover {
+  background-color: var(--dourado-escuro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+span button a {
+  color: var(--texto-escuro);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 form {
   max-width: 500px;
-  margin-bottom: 40px;
 }
 
-section h2 {
-  font-size: 20px;
+label {
+  display: inline-block;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 15px;
+  color: var(--vinho);
+  margin-bottom: 5px;
 }
 
-section p {
-  font-size: 15px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
   margin-bottom: 10px;
+  border: 1px solid var(--vinho-claro);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #fff;
+  color: var(--texto-escuro);
 }
 
-.compra {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--dourado);
 }
 
 .caixa {
   display: flex;
   align-items: center;
   gap: 25px;
-  padding: 10px 0px 30px;
+  padding: 10px 0 20px 0;
+}
+
+.caixa img {
+  height: 110px;
+  width: auto;
+}
+
+.caixa h1 {
+  color: var(--texto-escuro);
+    margin-bottom: 0px;
 }
 
 #escolha {
-  padding: 0 0 10px 0;
+  margin-bottom: 15px;
+  color: var(--creme);
 }
 
 .formulario h2 {
-  font-size: 18px;
-  font-weight: normal;
+  color: var(--vinho);
+}
+
+.formulario > p {
+  color: var(--texto-escuro);
   margin-bottom: 15px;
-}
-
-.formulario label {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.compra h2 {
-  margin-top: 15px;
-}
-
-.compra form {
-  background-color: rgba(187, 179, 179, 0.856);
-  padding: 10px;
-}
-
-iframe {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.historia h1 {
-  font-size: 28px;
-  font-weight: normal;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
 
-.historia p {
-  font-size: 15px;
-  color: #333333;
-  margin-bottom: 25px;
+section h2.contato {
+  color: var(--vinho);
+}
+
+.historia h1 {
+  color: var(--creme);
+  border-bottom: 2px solid var(--dourado);
+  padding-bottom: 10px;
+}
+
+/* ===== Vídeo (iframe) ===== */
+iframe {
+  display: block;
+  margin: 15px 0;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: var(--creme);
+  font-size: 13px;
+  border-top: 1px solid var(--vinho);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .item-vinho,
+  .caixa {
+    flex-direction: column;
+    text-align: center;
+  }
 }

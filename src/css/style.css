@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('efeitos.css'); /* arquivo novo para efeitos de animação */
 
 :root {
   --vinho-escuro: #3e0f18;   

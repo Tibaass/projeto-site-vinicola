@@ -48,6 +48,10 @@ header {
   margin-bottom: 30px;
 }
 
+.header-login {
+  justify-content: center;
+}
+
 header img {
   height: 130px;
   width: auto;
@@ -83,6 +87,40 @@ header nav {
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+
+
+.login-container {
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  width: 400px;
+  max-width: 100%;
+  background-color: rgb(245, 243, 238);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container h1 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.login-container input {
+  margin-bottom: 15px;
+}
+
+.login-container #login-btn {
+  align-self: center;
+  margin: 5px 0 0 0;
 }
 
 .nav-links a:hover {
@@ -220,6 +258,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="password"],
 textarea,
 select {
   width: 100%;

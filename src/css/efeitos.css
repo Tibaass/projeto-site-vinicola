@@ -1,3 +1,14 @@
+.nav_links{
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes navLinkAnimation {
+    0% {transform: translateY(-10px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
 .fadeIn {
     animation: fadeInAnimacao 2s 1 ease-in-out;
 }

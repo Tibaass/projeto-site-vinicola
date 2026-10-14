@@ -60,3 +60,45 @@ select:focus {
   outline: none;
   border-color: var(--dourado);
 }
+
+#caixa-carregando{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quadrado-carregando{
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #42db34;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+    margin-bottom: 12px;
+}
+@keyframes girar {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}

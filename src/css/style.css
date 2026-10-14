@@ -77,18 +77,6 @@ header nav {
   list-style: none;
   gap: 28px;
 }
-
-.nav-links a {
-  color: var(--texto-claro);
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0.3px;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
 .login-container {
   margin: 0 auto;
   font-family: Georgia, 'Times New Roman', serif;
@@ -119,11 +107,6 @@ header nav {
 .login-container #login-btn {
   align-self: center;
   margin: 5px 0 0 0;
-}
-
-.nav-links a:hover {
-  color: var(--dourado);
-  border-bottom: 2px solid var(--dourado);
 }
 
 h1 {
@@ -214,26 +197,6 @@ main > div p {
   margin-bottom: 10px;
 }
 
-span button,
-input[type="submit"] {
-  background-color: var(--dourado);
-  color: var(--texto-escuro);
-  border: none;
-  padding: 9px 18px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-span button:hover,
-input[type="submit"]:hover {
-  background-color: var(--dourado-escuro);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 span button a {
   color: var(--texto-escuro);
   text-decoration: none;
@@ -268,13 +231,6 @@ select {
   font-size: 14px;
   background-color: #fff;
   color: var(--texto-escuro);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  border-color: var(--dourado);
 }
 
 .caixa {
@@ -320,16 +276,21 @@ section h2.contato {
   padding-bottom: 10px;
 }
 
-/* ===== Vídeo (iframe) ===== */
+h2#video {
+  display: block;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+}
+
 iframe {
   display: block;
-  margin: 15px 0;
+  margin: 15px auto;
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== Rodapé ===== */
 footer {
   text-align: center;
   padding: 20px;
@@ -339,7 +300,11 @@ footer {
   border-top: 1px solid var(--vinho);
 }
 
-/* ===== Responsivo ===== */
+footer a {
+  text-decoration: none;
+  color: var(--creme);
+}
+
 @media (max-width: 650px) {
   header {
     flex-direction: column;

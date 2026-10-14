@@ -175,7 +175,7 @@ section p {
 }
 
 main > div {
-  background-color: var(--creme);
+  background-color: #fdfbca;
   color: var(--texto-escuro);
   border-radius: 10px;
   padding: 20px;

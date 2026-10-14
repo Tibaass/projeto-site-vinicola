@@ -1,4 +1,101 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
+=======
+@import url('efeitos.css');
+/* arquivo novo para efeitos de animação */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.vinheira {
+  position: fixed;
+  top: 0;
+  width: min(25vw, 600px);
+  height: 100vh;
+  z-index: 5;
+  pointer-events: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.vinheira img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.vinha-esquerda {
+  left: -8px;
+  margin-left: 0;
+}
+
+.vinha-esquerda img {
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+.vinha-direita {
+  right: -8px;
+}
+
+.vinha-direita img {
+  transform: none;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .vinheira {
+    width: min(18vw, 110px);
+    opacity: 0.85;
+  }
+
+  .vinha-esquerda {
+    left: -4px;
+  }
+
+  .vinha-direita {
+    right: -4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vinheira {
+    width: min(15vw, 80px);
+    opacity: 0.65;
+  }
+
+  .vinha-esquerda {
+    left: -3px;
+  }
+
+  .vinha-direita {
+    right: -3px;
+  }
+}
+
+
+
+:root {
+  --vinho-escuro: #3e0f18;
+  --vinho: #5c1626;
+  --vinho-claro: #8b2942;
+  --dourado: #c9a227;
+  --dourado-escuro: #a6841e;
+  --creme: #f8f1e7;
+  --creme-escuro: #ece2d0;
+  --texto-escuro: #2b1810;
+  --texto-claro: #f8f1e7;
+}
+>>>>>>> Stashed changes
 
 * {
   margin: 0;
@@ -19,8 +116,33 @@ header {
 margin-bottom: 30px;
 }
 
+<<<<<<< Updated upstream
 .navbar {
   margin-bottom: 25px;
+=======
+.header-login {
+  justify-content: center;
+}
+
+header img {
+  height: 130px;
+  width: auto;
+  border: 3px solid var(--dourado);
+  padding: 2px;
+  background-color: var(--creme);
+}
+
+header h6 {
+  font-family: art-nuvo, Georgia, 'Times New Roman', serif;
+  font-size: 24px;
+  color: var(--creme);
+  margin-left: 15px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .nav-links {
@@ -29,9 +151,15 @@ margin-bottom: 30px;
   gap: 20px;
 }
 
+<<<<<<< Updated upstream
 .nav-links a {
   color: #000000;
   text-decoration: none;
+=======
+.login-container {
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', serif;
+>>>>>>> Stashed changes
   font-size: 16px;
   font-weight: bold;
 }
@@ -42,6 +170,63 @@ h1 {
   margin-bottom: 15px;
 }
 
+<<<<<<< Updated upstream
+=======
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dourado);
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 17px;
+  color: var(--creme);
+  margin-bottom: 8px;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.item-vinho,
+.formulario,
+.contato form,
+.compra form,
+section {
+  background-color: var(--creme);
+  color: var(--texto-escuro);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: var(--vinho);
+}
+
+section p {
+  color: var(--texto-escuro);
+  margin-bottom: 10px;
+}
+
+main>div {
+  background-color: #fdfbca;
+  color: var(--texto-escuro);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+main>div h3 {
+  color: var(--vinho);
+}
+
+main>div p {
+  color: var(--texto-escuro);
+}
+>>>>>>> Stashed changes
 
 .item-vinho {
   display: flex;
@@ -66,6 +251,7 @@ img {
   color: #333333;
 }
 
+<<<<<<< Updated upstream
 h1 {
 font-size: 28px;
 font-weight: normal;
@@ -76,6 +262,75 @@ font-size: 15px;
 color: #333333;
 margin-bottom: 25px;
 border-bottom: 1px solid #cccccc;
+=======
+span button a {
+  color: var(--texto-escuro);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form {
+  max-width: 500px;
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--vinho);
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--vinho-claro);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #fff;
+  color: var(--texto-escuro);
+}
+
+.caixa {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0 20px 0;
+}
+
+.caixa img {
+  height: 110px;
+  width: auto;
+}
+
+.caixa h1 {
+  color: var(--texto-escuro);
+  margin-bottom: 0px;
+}
+
+#escolha {
+  margin-bottom: 15px;
+  color: var(--creme);
+}
+
+.formulario h2 {
+  color: var(--vinho);
+}
+
+.formulario>p {
+  color: var(--texto-escuro);
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+>>>>>>> Stashed changes
 }
 
 form {

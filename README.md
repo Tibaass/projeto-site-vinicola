@@ -11,4 +11,5 @@ link GitHub Pages:
 https://tibaass.github.io/projeto-site-vinicola/
 
 Estrutura dos arquivos:
-<img width="351" height="547" alt="image" src="https://github.com/user-attachments/assets/bea1977c-7532-4a61-92bd-d0fb3f7261b7" />
+<img width="352" height="422" alt="image" src="https://github.com/user-attachments/assets/3abc312a-de82-4728-98e9-1aa4d74409ac" />
+

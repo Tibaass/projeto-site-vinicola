@@ -1,16 +1,17 @@
 @charset "UTF-8";
-@import url('efeitos.css'); /* arquivo novo para efeitos de animação */
+@import url('efeitos.css');
+/* arquivo novo para efeitos de animação */
 
 :root {
-  --vinho-escuro: #3e0f18;   
-  --vinho: #5c1626;          
-  --vinho-claro: #8b2942;    
-  --dourado: #c9a227;        
+  --vinho-escuro: #3e0f18;
+  --vinho: #5c1626;
+  --vinho-claro: #8b2942;
+  --dourado: #c9a227;
   --dourado-escuro: #a6841e;
-  --creme: #f8f1e7;          
-  --creme-escuro: #ece2d0;   
-  --texto-escuro: #2b1810;   
-  --texto-claro: #f8f1e7;    
+  --creme: #f8f1e7;
+  --creme-escuro: #ece2d0;
+  --texto-escuro: #2b1810;
+  --texto-claro: #f8f1e7;
 }
 
 * {
@@ -48,6 +49,10 @@ header {
   margin-bottom: 30px;
 }
 
+#footer-login {
+  padding-top: 200px;
+}
+
 .header-login {
   justify-content: center;
 }
@@ -62,7 +67,7 @@ header img {
 
 header h6 {
   font-family: art-nuvo, Georgia, 'Times New Roman', serif;
-    font-size: 24px;
+  font-size: 24px;
   color: var(--creme);
   margin-left: 15px;
 }
@@ -77,6 +82,7 @@ header nav {
   list-style: none;
   gap: 28px;
 }
+
 .login-container {
   margin: 0 auto;
   font-family: Georgia, 'Times New Roman', serif;
@@ -155,7 +161,7 @@ section p {
   margin-bottom: 10px;
 }
 
-main > div {
+main>div {
   background-color: #fdfbca;
   color: var(--texto-escuro);
   border-radius: 10px;
@@ -163,11 +169,11 @@ main > div {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
-main > div h3 {
+main>div h3 {
   color: var(--vinho);
 }
 
-main > div p {
+main>div p {
   color: var(--texto-escuro);
 }
 
@@ -247,7 +253,7 @@ select {
 
 .caixa h1 {
   color: var(--texto-escuro);
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #escolha {
@@ -259,7 +265,7 @@ select {
   color: var(--vinho);
 }
 
-.formulario > p {
+.formulario>p {
   color: var(--texto-escuro);
   margin-bottom: 15px;
   border-bottom: 1px solid #ccc;

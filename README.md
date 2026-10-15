@@ -13,3 +13,4 @@ https://tibaass.github.io/projeto-site-vinicola/
 Estrutura dos arquivos:
 <img width="352" height="422" alt="image" src="https://github.com/user-attachments/assets/3abc312a-de82-4728-98e9-1aa4d74409ac" />
 
+Foi colocado uma estrutura de efeitos dentro do site para trazer um efeito suave para as coisas. Foi utilizado :Hover para efeitos de botão e nav.bar, transition e keyframes suave para a página inicial, transform para colocar um efeito de carregando para reservar o vinho, :before para adicionar um "◆" no inicio de lista, um "🍷" em todo h2 que gira, e um :active para dar efeito de clique no botão. 
